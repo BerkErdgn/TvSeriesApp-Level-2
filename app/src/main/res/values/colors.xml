@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    //--------------in addition to the normal boot----------------------------------------
+    <color name="custom_blue">#14213D</color>
+    <color name="custom_yellow">#FCA311</color>
+    <color name="custom_gray">#E5E5E5</color>
+    <color name="custom_white">#FFFFFF</color>
+    <color name="custom_black">#292929</color>
+    <color name="custom_yellow_for_Imdb">#FFF5C518</color>
+
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/custom_white</color>
+
+</resources>

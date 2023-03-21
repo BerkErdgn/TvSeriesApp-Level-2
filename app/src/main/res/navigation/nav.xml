@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appnavigation"
+    app:startDestination="@id/splashOneFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_secondeGeneralFragment"
+            app:destination="@id/secondeGeneralFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_singUoFragment"
+            app:destination="@id/singUoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUoFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.SingUoFragment"
+        android:label="fragment_sing_uo"
+        tools:layout="@layout/fragment_sing_uo" >
+        <action
+            android:id="@+id/action_singUoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondeGeneralFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.SecondeGeneralFragment"
+        android:label="fragment_seconde_general"
+        tools:layout="@layout/fragment_seconde_general" >
+        <action
+            android:id="@+id/action_secondeGeneralFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_secondeGeneralFragment_to_allTvSeriesFragment"
+            app:destination="@id/allTvSeriesFragment" />
+        <action
+            android:id="@+id/action_secondeGeneralFragment_to_oneTvSeriesFragment"
+            app:destination="@id/oneTvSeriesFragment" />
+        <action
+            android:id="@+id/action_secondeGeneralFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_oneTvSeriesFragment"
+            app:destination="@id/oneTvSeriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneTvSeriesFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.OneTvSeriesFragment"
+        android:label="fragment_one_tv_series"
+        tools:layout="@layout/fragment_one_tv_series" >
+        <argument android:name="idTvSeries"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_oneTvSeriesFragment_to_secondeGeneralFragment"
+            app:destination="@id/secondeGeneralFragment" />
+        <action
+            android:id="@+id/action_oneTvSeriesFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+        <action
+            android:id="@+id/action_oneTvSeriesFragment_to_episodesFragment"
+            app:destination="@id/episodesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashOneFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.oneTimeView.SplashOneFragment"
+        android:label="fragment_splash_one"
+        tools:layout="@layout/fragment_splash_one" >
+        <action
+            android:id="@+id/action_splashOneFragment_to_splashTwoFragment"
+            app:destination="@id/splashTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashTwoFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.oneTimeView.SplashTwoFragment"
+        android:label="fragment_splash_two"
+        tools:layout="@layout/fragment_splash_two" >
+        <action
+            android:id="@+id/action_splashTwoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTvSeriesFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.AllTvSeriesFragment"
+        android:label="fragment_all_tv_series"
+        tools:layout="@layout/fragment_all_tv_series" >
+        <action
+            android:id="@+id/action_allTvSeriesFragment_to_oneTvSeriesFragment"
+            app:destination="@id/oneTvSeriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person" >
+        <argument
+            android:name="idPeople"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodesFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.EpisodesFragment"
+        android:label="fragment_episodes"
+        tools:layout="@layout/fragment_episodes" >
+        <argument
+            android:name="idEpisodes"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

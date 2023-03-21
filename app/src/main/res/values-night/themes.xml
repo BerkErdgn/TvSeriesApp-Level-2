@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyTvSeriesAppLeveL2" parent="Theme.MaterialComponents">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/custom_yellow</item>
+        <item name="colorPrimaryVariant">@color/custom_yellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#EEEEEE</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="colorControlNormal">@color/custom_white</item>
+        <item name="colorControlActivated">@color/custom_white</item>
+        <item name="colorControlHighlight">@color/custom_white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <ImageView
+        android:id="@+id/searchTvSeriesImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/searchTvSeiresName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tv Series Name"
+                android:textSize="18dp"
+                android:textColor="@color/custom_white"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+                   android:id="@+id/searchTvSeriesRating"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="rating"
+                   android:layout_margin="1dp"/>
+
+               <TextView
+                   android:id="@+id/searchTvSeriesLanguage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="language"
+                   android:layout_margin="1dp"/>
+           </LinearLayout>
+
+            <TextView
+                android:id="@+id/searchTvSeriesGenres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genres"
+                android:layout_margin="1dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/searchTvSeriesDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="day"
+                    android:layout_margin="1dp"/>
+
+                <TextView
+                    android:id="@+id/searchTvSeriesTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="time"
+                    android:layout_margin="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/searchTvSeriesPremiered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="StartDay" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:layout_margin="2dp"/>
+
+                <TextView
+                    android:id="@+id/searchTvSeriesEnded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EndDay" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>
