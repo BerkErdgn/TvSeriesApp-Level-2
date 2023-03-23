@@ -40,13 +40,11 @@ class LoginFragment : Fragment() {
 
 
         singupButton.setOnClickListener {
-            val actionLoginToSingUp = LoginFragmentDirections.actionLoginFragmentToSingUoFragment()
+            val actionLoginToSingUp = LoginFragmentDirections.actionLoginFragmentToSingUpFragment()
             Navigation.findNavController(it).navigate(actionLoginToSingUp)
         }
 
         loginButton.setOnClickListener {
-            val actionLoginToApp = LoginFragmentDirections.actionLoginFragmentToSecondeGeneralFragment()
-            Navigation.findNavController(it).navigate(actionLoginToApp)
 
             val email = loginTextView.text
             val password = passwordTextView.text

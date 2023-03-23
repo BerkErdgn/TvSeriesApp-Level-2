@@ -32,7 +32,7 @@ class SingUpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val actionSingUpToLogin = SingUoFragmentDirections.actionSingUoFragmentToLoginFragment()
+        val actionSingUpToLogin = SingUpFragmentDirections.actionSingUpFragmentToSecondeGeneralFragment()
 
         backLoginScreen.setOnClickListener{
             Navigation.findNavController(it).navigate(actionSingUpToLogin)

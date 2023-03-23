@@ -11,20 +11,11 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
+            android:id="@+id/action_loginFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+        <action
             android:id="@+id/action_loginFragment_to_secondeGeneralFragment"
             app:destination="@id/secondeGeneralFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_singUoFragment"
-            app:destination="@id/singUoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/singUoFragment"
-        android:name="com.berke.mytvseriesapplevel2.view.SingUoFragment"
-        android:label="fragment_sing_uo"
-        tools:layout="@layout/fragment_sing_uo" >
-        <action
-            android:id="@+id/action_singUoFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondeGeneralFragment"
@@ -123,5 +114,13 @@
         <action
             android:id="@+id/action_userFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.berke.mytvseriesapplevel2.view.SingUpFragment"
+        android:label="SingUpFragment" >
+        <action
+            android:id="@+id/action_singUpFragment_to_secondeGeneralFragment"
+            app:destination="@id/secondeGeneralFragment" />
     </fragment>
 </navigation>
